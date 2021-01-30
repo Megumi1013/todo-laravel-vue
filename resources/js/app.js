@@ -1,8 +1,8 @@
 import Vue from 'vue'
+import App from './components/App.vue'
 
 Vue.config.productionTip = false
 
 const app = new Vue({
-    el: '#app',
-    delimiters: ["<%","%>"], // この行を追加
-});
+    render:h => h(App)
+    }).$mount('#app');
